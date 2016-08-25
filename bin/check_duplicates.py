@@ -1,8 +1,8 @@
 #!/bin/env python 
 
 import sys
-import file_utils
 import argparse
+import file_utils
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

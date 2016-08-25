@@ -1,13 +1,19 @@
-from setuptools import setup
+#!/usr/bin/env python
+
+from setuptools import setup, find_packages
 
 setup(name='py_utils',
-      version='0.0.1',
+      version='0.1.0',
       description='Python utilities',
       url='http://github.com/asundaresan/py_utils',
       author='Aravind Sundaresan',
       author_email='asundaresan@gmail.com',
       license='GPLv3',
-      packages=['py_utils'],
-			scripts=["bin/mortgage.py"],
-      zip_safe=False)
+      packages=['mortgage','file_utils'],
+      scripts=[
+        "bin/mortgage_table.py",
+        "bin/check_duplicates.py"
+        ],
+      zip_safe=False
+      )
 
