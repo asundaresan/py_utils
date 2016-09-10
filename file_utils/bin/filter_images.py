@@ -11,6 +11,7 @@ if __name__ == "__main__":
     parser.add_argument( "--verbose", "-v", action="count", help="Verbosity level" )
     args = parser.parse_args()
     print( "Searching for files in: %s" % args.folder )
-    image_utils.process_folder( args.folder, verbose = args.verbose )
+    include = [ {"Model": "iPhone 6", "Size": "3264x2448"} ]
+    image_utils.process_folder( args.folder, include = include, verbose = args.verbose )
 
-        
+
